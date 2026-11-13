@@ -1,0 +1,224 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    color: #26384b;
+}
+
+nav {
+    background-color: #172c46;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #77d9d0;
+}
+
+
+header {
+    background-color: #172c46;
+    color: white;
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 0 0 15px 15px;
+}
+
+.intro {
+    max-width: 550px;
+}
+
+.kleine-titel {
+    color: #77d9d0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    line-height: 1.7;
+}
+
+header img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.knop {
+    display: inline-block;
+    background-color: #77d9d0;
+    color: #172c46;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.knop:hover {
+    background-color: white;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1100px;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: #172c46;
+    border-bottom: 2px solid #77d9d0;
+    padding-bottom: 12px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+
+.projecten {
+    display: flex;
+    gap: 20px;
+}
+
+.kaart {
+    background-color: #f2f6fa;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.kaart h3 {
+    color: #235a78;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #b9c8d8;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 130px;
+}
+
+button {
+    display: block;
+    margin-top: 15px;
+    background-color: #77d9d0;
+    color: #172c46;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #172c46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .projecten {
+        flex-direction: column;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    .links {
+  max-width: 1040px;
+  margin: 25px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  color: #162b46;
+}
+}
+
+.links h2 {
+  margin-top: 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #72d8cd;
+}
+
+.links li {
+  margin-bottom: 8px;
+}
+
+.links a {
+  color: #162b46;
+}
+
+.links a:hover {
+  color: #278e87;
+}
+
+.projectfoto {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
